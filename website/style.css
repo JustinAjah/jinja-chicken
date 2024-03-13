@@ -48,7 +48,7 @@ h6 {
 
 p {
   font-size: 16px;
-  color: #465b52;
+  color: #636160;
 }
 
 body {
@@ -219,20 +219,33 @@ body {
 /* featured products */
 
 #product1 {
-  padding-top: 62px;
+  padding-top: 82px;
   text-align: center;
+  margin-bottom: 10%;
+}
+
+#product1 p {
+  padding-bottom: 42px;
+}
+
+#product1 .pro-container {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+  flex-wrap: wrap;
 }
 
 #product1 .pro {
-  width: 23%;
+  width: 20%;
   min-width: 250px;
   padding: 10px 12px;
-  border: 1px solid #cce7d0;
+  border: 1px solid #dbdbdb;
   border-radius: 25px;
   cursor: pointer;
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
   margin: 15px 0;
   transition: 0.2s ease;
+  position: relative;
 }
 
 #product1 .pro:hover {
@@ -242,6 +255,11 @@ body {
 #product1 .pro img {
   width: 100%;
   border-radius: 20px;
+  transition: transform 0.4s;
+}
+
+#product1 .pro img:hover {
+  transform: scale(1.05);
 }
 
 #product1 .pro .des {
@@ -250,13 +268,94 @@ body {
 }
 
 #product1 .pro .des span {
-  color: s;
+  color: #606063;
+  font-size: 12px;
+  transform: all 0.1s;
+}
+
+#product1 .pro .des span:hover {
+  color: #0b0b0b;
+}
+
+.pro .des h5 {
+  padding-top: 4px;
+  color: #222;
+  font-size: 18px;
+  transition: all 0.2s;
+}
+
+.pro .des h4 {
+  padding-top: 7px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.pro .des h5:hover {
+  color: #f15800;
 }
 
 #shopping-cart {
+  display: inline-block;
   color: #1a1a1a;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+  background-color: #f2f2f2;
+  font-weight: 500;
+  border: 1px solid #1a1a1a;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  transition: 0.1s ease;
+}
+
+#shopping-cart:hover {
+  color: #FF5E03;
+  border: 1px solid #FF5E03;
 }
 
 .star i {
   color: #FF5E03;
+}
+
+/* feature */
+
+.feature {
+  padding: 10px 14% 10px;
+}
+
+.feature-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.box {
+  padding: 15px 15px 15px 30px;
+  border-left: 2px solid #222;
+  box-shadow: 0 10px 25px rgba(0, 0 ,0 ,0.1);
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.f-icon i {
+  font-size: 33px;
+  color: #FF5E03;
+}
+
+.f-text h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #FF5E03;
+}
+
+.f-text h3 p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #dbdbdb;
+  line-height: 33px;
 }
