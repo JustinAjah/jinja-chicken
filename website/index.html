@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
         <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"rel="stylesheet"/>
         <link rel="stylesheet" href="style.css">
+        
     </head>
 
     <body>
@@ -19,8 +20,10 @@
                 <ul id="navbar">
                     <li><a class="active" href="index.html">Home</a></li>
                     <li><a href="shop.html">Shop</a></li>
-                    <li><a href="about.html">Collection</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="women.html">Women</a></li>
+                    <li><a href="men.html">Men</a></li>
+                    <li><a href="accessories.html">Accessories</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
                 </ul>
 
                 <ul id="navbar-icons">
@@ -37,7 +40,7 @@
                 <h6>New Arrivals</h6>
                 <h1>New Arrivals <br> <span>with discounts</span></h1>
                 <p>Super value deals on all branded-products with tons of discounts available only for you</p>
-                <a href="#" class="btn">
+                <a href="shop.html" class="btn">
                     Shop now
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
@@ -62,7 +65,7 @@
                 <div class="brands-c">
                     <img src="img/banner/g4.png">
                 </div>
-                
+
                 <div class="brands-c">
                     <img src="img/banner/g5.png">
                 </div>
@@ -152,46 +155,133 @@
             </div>
         </section>
 
-        <!-- feature -->
-        <section class="feature">
-            <div class="feature-content">
-                <div class="box">
-                    <div class="f-icon">
-                        <i class="ri-bank-card-fill"></i>
-                    </div>
-
-                    <div class="f-text">
-                        <h3>Cash on Delivery</h3>
-                        <p>Lorem ipsum. repellendus corrupti voluptas. Ad fugiat nisi,
-                            nihil aliquam itaque praesentium laudantium</p>
-                    </div>
-                </div>
-
-                <div class="box">
-                    <div class="f-icon">
-                        <i class="ri-truck-fill"></i>
-                    </div>
-
-                    <div class="f-text">
-                        <h3>Free Shipping</h3>
-                        <p>Lorem ipsum. repellendus corrupti voluptas. Ad fugiat nisi,
-                            nihil aliquam itaque praesentium laudantium</p>
+        <!-- section -->
+        <div class="main-section">
+            <div class="section-container">
+                <div class="s-women">
+                    <button onclick="sButton1()">1500+</button>
+                    <div class="section-child">
+                        <h2><a href="women.html">For Women's</a></h2>
+                        <h4><a href="women.html">T-shirts and Blouses</a></h4>
+                        <h4><a href="women.html">Dresses</a></h4>
+                        <h4><a href="women.html">Jackets</a></h4>
+                        <h4><a href="women.html">Hoodies</a></h4>
+                        <h4><a href="women.html">Knit</a></h4>
                     </div>
                 </div>
+                <div class="s-men">
+                        <button onclick="sButton2()">1000+</button>
+                        <div class="section-child">
+                            <h2><a href="men.html">For Men's</a></h2>
+                            <h4><a href="men.html">T-shirts and Shirts</a></h4>
+                            <h4><a href="men.html">Jackets</a></h4>
+                            <h4><a href="men.html">Hoodies</a></h4>
+                        </div>
+                </div>
+                <div class="s-accessories">
+                        <button onclick="sButton3()">800+</button>
+                        <div class="section-child">
+                            <h2><a href="accessories.html">Accessories</a></h2>
+                            <h4><a href="accessories.html">Handbags</a></h4>
+                            <h4><a href="accessories.html">Sunglasses</a></h4>
+                            <h4><a href="accessories.html">Hat</a></h4>
+                        </div>
+                </div>
+            </div>
+        </div>
 
-                <div class="box">
-                    <div class="f-icon">
-                        <i class="ri-customer-service-fill"></i>
+        <!-- banner -->
+
+        <div class="banner">
+            <div class="banner-container">
+                <h6>LIMITED TIME OFFERS</h6>
+                <h1>25% Off All Fashion <br> <span>Limited Time!</span></h1>
+                <p>Super value deals on all branded-products with tons of discounts available only for you</p>
+                <a href="shop.html" class="btn">
+                    Shop now
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- instagram -->
+        <section class="text">
+            <div class="text-first">
+                <h6>SOCIAL MEDIA</h6>
+                <a href="https://www.instagram.com/liu.melvern?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><h3>Instagram</h3></a>
+            </div>
+
+            <div class="container">
+                <div class="slider-wrapper">
+                    <button id="prev-slide" class="slide-button"><i class="ri-arrow-left-s-line"></i></button>
+                    <div class="image-list" onmousewheel="this.scrollLeft+=event.deltaY>0?100:-100; ">
+                        <img src="img/blog/ig-1.jpg" onclick="linkToInstagram()" alt="img-1" class="image-item">
+                        <img src="img/blog/ig-2.jpg" onclick="linkToInstagram()" alt="img-2" class="image-item">
+                        <img src="img/blog/ig-3.jpg" onclick="linkToInstagram()" alt="img-3" class="image-item">
+                        <img src="img/blog/ig-4.jpg" onclick="linkToInstagram()" alt="img-4" class="image-item">
+                        <img src="img/blog/ig-5.jpg" onclick="linkToInstagram()" alt="img-5" class="image-item">
+                        <img src="img/blog/ig-6.jpg" onclick="linkToInstagram()" alt="img-6" class="image-item">
+                        <img src="img/blog/ig-7.jpg" onclick="linkToInstagram()" alt="img-7" class="image-item">
+                        <img src="img/blog/ig-8.jpg" onclick="linkToInstagram()" alt="img-8" class="image-item">
+                        <img src="img/blog/ig-9.jpg" onclick="linkToInstagram()" alt="img-9" class="image-item">
+                        <img src="img/blog/ig-10.jpg" onclick="linkToInstagram()" alt="img-10" class="image-item">
                     </div>
-
-                    <div class="f-text">
-                        <h3>31 days return</h3>
-                        <p>Lorem ipsum. repellendus corrupti voluptas. Ad fugiat nisi,
-                            nihil aliquam itaque praesentium laudantium</p>
+                    <button id="next-slide" class="slide-button"><i class="ri-arrow-right-s-line"></i></button>
+                </div>
+                <div class="slider-scrollbar">
+                    <div class="scrollbar-track">
+                        <div class="scrollbar-thumb">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>vern<span class="logo-dot">.</span></h4>
+                        <ul>
+                            <li><a href="about-us.html">about us</a></li>
+                            <li><a href="women.html">women</a></li>
+                            <li><a href="men.html">men</a></li>
+                            <li><a href="accessories.html">accessories</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>get help</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">shipping</a></li>
+                            <li><a href="#">returns</a></li>
+                            <li><a href="#">order status</a></li>
+                            <li><a href="#">payment options</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>shop</h4>
+                        <ul>
+                            <li><a href="#">hoodie</a></li>
+                            <li><a href="#">t-shirt</a></li>
+                            <li><a href="#">handbag</a></li>
+                            <li><a href="#">dress</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </footer>
+
 
         <script src="https://kit.fontawesome.com/a8cb634ef3.js" crossorigin="anonymous"></script>
         <script src="script.js"></script>
